@@ -26,7 +26,7 @@ struct RegisterView: View {
                 SecureField("Password", text: $viewModel.password)
                 
                 TLButton(title: "Create Account", background: .green) {
-                    //
+                    viewModel.register()
                 }
             }.offset(y: -50)
             

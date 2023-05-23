@@ -14,7 +14,7 @@
 		E44FB5622A1BE79F00C11C4F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E44FB5612A1BE79F00C11C4F /* FirebaseAuth */; };
 		E44FB5642A1BE79F00C11C4F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E44FB5632A1BE79F00C11C4F /* FirebaseFirestore */; };
 		E44FB5662A1BE79F00C11C4F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E44FB5652A1BE79F00C11C4F /* FirebaseFirestoreSwift */; };
-		E456204C2A1CE5FC0033C8E2 /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204B2A1CE5FC0033C8E2 /* View + Ext.swift */; };
+		E456204C2A1CE5FC0033C8E2 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204B2A1CE5FC0033C8E2 /* View+Ext.swift */; };
 		E456204E2A1CEADC0033C8E2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204D2A1CEADC0033C8E2 /* HeaderView.swift */; };
 		E45620502A1CFC340033C8E2 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204F2A1CFC340033C8E2 /* TLButton.swift */; };
 		E45620522A1D044B0033C8E2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45620512A1D044B0033C8E2 /* String+Ext.swift */; };
@@ -32,6 +32,8 @@
 		E49195272A1C9E2000745425 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195262A1C9E2000745425 /* ProfileViewModel.swift */; };
 		E49195292A1C9E4800745425 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195282A1C9E4800745425 /* UserModel.swift */; };
 		E491952B2A1C9E5800745425 /* TodoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491952A2A1C9E5800745425 /* TodoListItemModel.swift */; };
+		E4FA6A942A1D1F9E0008EB96 /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA6A932A1D1F9E0008EB96 /* Encodable+Ext.swift */; };
+		E4FA6A972A1D239C0008EB96 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA6A962A1D239C0008EB96 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +42,7 @@
 		E44FB5542A1BD8D500C11C4F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E44FB5562A1BD8D700C11C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44FB5592A1BD8D700C11C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E456204B2A1CE5FC0033C8E2 /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
+		E456204B2A1CE5FC0033C8E2 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		E456204D2A1CEADC0033C8E2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E456204F2A1CFC340033C8E2 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		E45620512A1D044B0033C8E2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		E49195262A1C9E2000745425 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E49195282A1C9E4800745425 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E491952A2A1C9E5800745425 /* TodoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemModel.swift; sourceTree = "<group>"; };
+		E4FA6A932A1D1F9E0008EB96 /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
+		E4FA6A962A1D239C0008EB96 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +120,9 @@
 		E456204A2A1CE5D70033C8E2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E456204B2A1CE5FC0033C8E2 /* View + Ext.swift */,
+				E456204B2A1CE5FC0033C8E2 /* View+Ext.swift */,
 				E45620512A1D044B0033C8E2 /* String+Ext.swift */,
+				E4FA6A932A1D1F9E0008EB96 /* Encodable+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -134,7 +139,7 @@
 		E491950A2A1C9AE400745425 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E44FB5542A1BD8D500C11C4F /* MainView.swift */,
+				E4FA6A952A1D23800008EB96 /* Main */,
 				E49195112A1C9C6500745425 /* Register */,
 				E49195102A1C9C5E00745425 /* Login */,
 				E491950F2A1C9C4700745425 /* NewItem */,
@@ -205,6 +210,15 @@
 				E491951E2A1C9DCC00745425 /* RegisterViewModel.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		E4FA6A952A1D23800008EB96 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E44FB5542A1BD8D500C11C4F /* MainView.swift */,
+				E4FA6A962A1D239C0008EB96 /* MainViewModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +307,14 @@
 				E491951D2A1C9D9900745425 /* ProfileView.swift in Sources */,
 				E49195152A1C9D5D00745425 /* RegisterView.swift in Sources */,
 				E49195252A1C9DFC00745425 /* TodoListViewModel.swift in Sources */,
+				E4FA6A942A1D1F9E0008EB96 /* Encodable+Ext.swift in Sources */,
 				E456204E2A1CEADC0033C8E2 /* HeaderView.swift in Sources */,
 				E44FB5552A1BD8D500C11C4F /* MainView.swift in Sources */,
 				E491951B2A1C9D9100745425 /* TodoListView.swift in Sources */,
 				E49195172A1C9D6C00745425 /* LoginView.swift in Sources */,
-				E456204C2A1CE5FC0033C8E2 /* View + Ext.swift in Sources */,
+				E456204C2A1CE5FC0033C8E2 /* View+Ext.swift in Sources */,
 				E49195292A1C9E4800745425 /* UserModel.swift in Sources */,
+				E4FA6A972A1D239C0008EB96 /* MainViewModel.swift in Sources */,
 				E45620522A1D044B0033C8E2 /* String+Ext.swift in Sources */,
 				E49195232A1C9DEE00745425 /* NewItemViewModel.swift in Sources */,
 				E491951F2A1C9DCC00745425 /* RegisterViewModel.swift in Sources */,
