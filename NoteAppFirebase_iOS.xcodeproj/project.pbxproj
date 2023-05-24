@@ -32,6 +32,7 @@
 		E49195272A1C9E2000745425 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195262A1C9E2000745425 /* ProfileViewModel.swift */; };
 		E49195292A1C9E4800745425 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195282A1C9E4800745425 /* UserModel.swift */; };
 		E491952B2A1C9E5800745425 /* TodoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E491952A2A1C9E5800745425 /* TodoListItemModel.swift */; };
+		E4AAAA912A1DE3610004B0BC /* XDismissButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AAAA902A1DE3610004B0BC /* XDismissButtonView.swift */; };
 		E4FA6A942A1D1F9E0008EB96 /* Encodable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA6A932A1D1F9E0008EB96 /* Encodable+Ext.swift */; };
 		E4FA6A972A1D239C0008EB96 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA6A962A1D239C0008EB96 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		E49195262A1C9E2000745425 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E49195282A1C9E4800745425 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E491952A2A1C9E5800745425 /* TodoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemModel.swift; sourceTree = "<group>"; };
+		E4AAAA902A1DE3610004B0BC /* XDismissButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButtonView.swift; sourceTree = "<group>"; };
 		E4FA6A932A1D1F9E0008EB96 /* Encodable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Ext.swift"; sourceTree = "<group>"; };
 		E4FA6A962A1D239C0008EB96 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 				E49195122A1C9C9300745425 /* TodoListItemView.swift */,
 				E456204D2A1CEADC0033C8E2 /* HeaderView.swift */,
 				E456204F2A1CFC340033C8E2 /* TLButton.swift */,
+				E4AAAA902A1DE3610004B0BC /* XDismissButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				E491952B2A1C9E5800745425 /* TodoListItemModel.swift in Sources */,
 				E45620502A1CFC340033C8E2 /* TLButton.swift in Sources */,
+				E4AAAA912A1DE3610004B0BC /* XDismissButtonView.swift in Sources */,
 				E49195192A1C9D7F00745425 /* NewItemView.swift in Sources */,
 				E49195132A1C9C9300745425 /* TodoListItemView.swift in Sources */,
 				E491951D2A1C9D9900745425 /* ProfileView.swift in Sources */,
