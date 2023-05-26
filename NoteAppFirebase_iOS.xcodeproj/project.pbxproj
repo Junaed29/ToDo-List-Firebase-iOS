@@ -18,6 +18,7 @@
 		E456204E2A1CEADC0033C8E2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204D2A1CEADC0033C8E2 /* HeaderView.swift */; };
 		E45620502A1CFC340033C8E2 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E456204F2A1CFC340033C8E2 /* TLButton.swift */; };
 		E45620522A1D044B0033C8E2 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45620512A1D044B0033C8E2 /* String+Ext.swift */; };
+		E4602A3B2A20EED800A84980 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4602A3A2A20EED800A84980 /* Launch Screen.storyboard */; };
 		E49195082A1C977F00745425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E49195072A1C977F00745425 /* GoogleService-Info.plist */; };
 		E49195132A1C9C9300745425 /* TodoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195122A1C9C9300745425 /* TodoListItemView.swift */; };
 		E49195152A1C9D5D00745425 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49195142A1C9D5D00745425 /* RegisterView.swift */; };
@@ -47,6 +48,7 @@
 		E456204D2A1CEADC0033C8E2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E456204F2A1CFC340033C8E2 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		E45620512A1D044B0033C8E2 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		E4602A3A2A20EED800A84980 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E49195072A1C977F00745425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E49195122A1C9C9300745425 /* TodoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemView.swift; sourceTree = "<group>"; };
 		E49195142A1C9D5D00745425 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E49195072A1C977F00745425 /* GoogleService-Info.plist */,
+				E4602A3A2A20EED800A84980 /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			files = (
 				E44FB55A2A1BD8D700C11C4F /* Preview Assets.xcassets in Resources */,
 				E44FB5572A1BD8D700C11C4F /* Assets.xcassets in Resources */,
+				E4602A3B2A20EED800A84980 /* Launch Screen.storyboard in Resources */,
 				E49195082A1C977F00745425 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +464,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,6 +497,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
