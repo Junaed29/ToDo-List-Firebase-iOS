@@ -37,7 +37,7 @@ class RegisterViewModel: ObservableObject {
         
         let db = Firestore.firestore()
         
-        db.collection("users")
+        db.collection(USER_COLLECTION)
             .document(id)
             .setData(newUser.asDictinary())
     }

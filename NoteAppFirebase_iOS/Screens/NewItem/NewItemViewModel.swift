@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import FirebaseFirestore
+import FirebaseAuth
 
 
 
@@ -26,8 +28,22 @@ class NewItemViewModel: ObservableObject {
             return
         }
         
+        //Get current user id
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         
+        //Create model
+        let newId = UUID().uuidString
+        let newItem = TodoListItemModel(id: newId, title: title, dueDate: dueDate.timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: false)
         
+        //Save model
+        Firestore.firestore()
+            .collection(USER_COLLECTION)
+            .document(uid)
+            .collection(TODO_COLLECTION)
+            .document(newId)
+            .setData(newItem.asDictinary()) { error in
+                print(error)
+            }
     }
     
     func canSave() -> Bool {

@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+let USER_COLLECTION = "users"
+let TODO_COLLECTION = "todos"
 
 struct MainView: View {
     @StateObject var viewModel = MainViewModel()
