@@ -30,7 +30,7 @@ struct TodoListItemView: View {
             Button {
                 onDone()
             } label: {
-                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle").foregroundColor(.blue)
             }
 
         }.padding(.vertical,5)

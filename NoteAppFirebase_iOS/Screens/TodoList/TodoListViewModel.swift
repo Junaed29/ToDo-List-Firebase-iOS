@@ -32,6 +32,15 @@ class TodoListViewModel: ObservableObject {
     
     
     func toogleIsDone(item: TodoListItemModel) {
+        var copyItem = item
+        copyItem.setDone(!item.isDone)
         
+        let db = Firestore.firestore()
+        
+        db.collection(USER_COLLECTION)
+            .document(userId)
+            .collection(TODO_COLLECTION)
+            .document(copyItem.id)
+            .setData(copyItem.asDictinary())
     }
 }
