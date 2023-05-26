@@ -14,22 +14,26 @@ struct RegisterView: View {
         VStack {
             HeaderView(title: "Register", subTitle: "Start organizing todos", color: .orange, rotationDegree: -15)
           
-            Form {
+            VStack {
                 TextField("Full Name", text: $viewModel.name)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocorrectionDisabled()
                 
                 TextField("Email address", text: $viewModel.email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.emailAddress)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                 
                 SecureField("Password", text: $viewModel.password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 TLButton(title: "Create Account", background: .green) {
                     viewModel.register()
                 }
-            }.offset(y: -50)
-            
+            }
+            .padding()
+            .offset(y: -80)
             
             Spacer()
         }

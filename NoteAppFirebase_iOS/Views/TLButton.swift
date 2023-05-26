@@ -25,7 +25,9 @@ struct TLButton: View {
                     .bold()
             }
             
-        }.padding()
+        }
+        .frame(width: getScreenWide() - 100, height: 40)
+        .padding()
     }
 }
 

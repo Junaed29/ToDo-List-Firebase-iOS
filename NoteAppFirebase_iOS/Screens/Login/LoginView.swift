@@ -15,26 +15,30 @@ struct LoginView: View {
             VStack {
                 HeaderView(title: "To Do List", subTitle: "Get things done", color: .pink, rotationDegree: 15)
                 
-                Form {
+                VStack {
                     if !viewModel.errorMessage.isEmpty{
                         Text(viewModel.errorMessage)
                             .foregroundColor(.red)
                     }
                     
                     TextField("Email Address", text: $viewModel.email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
                     
                     SecureField("Enter password", text: $viewModel.password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     TLButton(title: "Log In", background: .blue) {
-                        //
+                        viewModel.login()
                     }
                     
                 }
-                .offset(y: -50)
+                .padding()
+                .offset(y: -80)
                 
+                Spacer()
                 
                 VStack {
                     Text("New around here?")
@@ -44,7 +48,7 @@ struct LoginView: View {
                     }.foregroundColor(.blue)
                 }.padding(.bottom, 50)
                 
-                Spacer()
+                
             }
         }
         
