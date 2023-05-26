@@ -12,8 +12,9 @@ import FirebaseFirestoreSwift
 struct TodoListView: View {
     @StateObject var viewModel : TodoListViewModel
     private let userId: String
-    
+
     @FirestoreQuery var items: [TodoListItemModel]
+    @State var selectedItem: TodoListItemModel? = nil
     
     init(userId: String) {
         self.userId = userId
@@ -34,6 +35,12 @@ struct TodoListView: View {
                         Button("Delete") {
                             viewModel.deleteItem(itemId: item.id)
                         }.tint(.red)
+                        
+                        Button("Edit") {
+                            self.selectedItem = item
+                            viewModel.showingNewItemView.toggle()
+                        }.tint(.yellow)
+
                     }
                     
                 }.listStyle(PlainListStyle())
@@ -41,6 +48,7 @@ struct TodoListView: View {
             .navigationTitle("To Do List")
             .toolbar {
                 Button {
+                    self.selectedItem = nil
                     viewModel.showingNewItemView.toggle()
                 } label: {
                     Image(systemName: "plus")
@@ -48,7 +56,11 @@ struct TodoListView: View {
 
             }
             .fullScreenCover(isPresented: $viewModel.showingNewItemView) {
-                NewItemView()
+                if let selectedItem{
+                    NewItemView(todoItem: selectedItem)
+                }else{
+                    NewItemView()
+                }
             }
         }
     }

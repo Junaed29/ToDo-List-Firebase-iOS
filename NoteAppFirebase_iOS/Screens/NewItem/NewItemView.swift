@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct NewItemView: View {
-    @StateObject var viewModel = NewItemViewModel()
+    
+    let todoItem: TodoListItemModel?
+    @StateObject var viewModel: NewItemViewModel
     @Environment(\.dismiss) private var dismiss
+    
+    init(todoItem: TodoListItemModel? = nil) {
+        self.todoItem = todoItem
+        _viewModel = StateObject(wrappedValue: NewItemViewModel(todoItem: todoItem))
+    }
     
     var body: some View {
         VStack {
-            Text("New Item")
+            Text(todoItem == nil ? "New Item" : "Update Item")
                 .bold()
                 .font(.system(size: 32))
                 .padding(.top)
@@ -24,8 +31,12 @@ struct NewItemView: View {
                 DatePicker("Select a date:", selection: $viewModel.dueDate, in: Date()... )
                     .datePickerStyle(GraphicalDatePickerStyle())
                 
-                TLButton(title: "Save", background: .pink) {
-                    viewModel.save()
+                TLButton(title: todoItem == nil ? "Save" : "Update", background: .pink) {
+                    if let todoItem{
+                        viewModel.update(item: todoItem)
+                    }else{
+                        viewModel.save()
+                    }
                 }
             }
         }.overlay(alignment: .topTrailing) {
