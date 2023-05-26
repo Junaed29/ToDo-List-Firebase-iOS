@@ -37,6 +37,10 @@ struct NewItemView: View {
 
         }.alert(isPresented: $viewModel.showAlert) {
             Alert(title: Text("Error"), message: Text("Please give a title"))
+        }.onChange(of: viewModel.dateSavedSuccess) { newValue in
+            if newValue{
+                dismiss()
+            }
         }
     }
 }

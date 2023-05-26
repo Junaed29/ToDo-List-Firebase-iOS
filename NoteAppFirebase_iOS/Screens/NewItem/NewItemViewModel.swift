@@ -17,12 +17,14 @@ class NewItemViewModel: ObservableObject {
     @Published var title = ""
     @Published var dueDate = Date()
     @Published var showAlert = false
+    @Published var dateSavedSuccess = false
     
     init() {}
     
     
     func save() {
         showAlert = false
+        dateSavedSuccess = false
         guard canSave() else {
             showAlert = true
             return
@@ -41,8 +43,10 @@ class NewItemViewModel: ObservableObject {
             .document(uid)
             .collection(TODO_COLLECTION)
             .document(newId)
-            .setData(newItem.asDictinary()) { error in
-                print(error)
+            .setData(newItem.asDictinary()) {[weak self] error in
+                if error == nil{
+                    self?.dateSavedSuccess = true
+                }
             }
     }
     

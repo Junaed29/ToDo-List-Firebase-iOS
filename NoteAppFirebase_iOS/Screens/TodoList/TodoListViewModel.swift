@@ -7,10 +7,31 @@
 
 
 import SwiftUI
+import FirebaseFirestore
 
 class TodoListViewModel: ObservableObject {
     @Published var showingNewItemView = false
+    private let userId: String
+    
+    init(userId: String) {
+        self.userId = userId
+    }
     
     
-    init() {}
+    /// Delete ToDo item from firebase
+    /// - Parameter itemId: Item Id
+    func deleteItem(itemId: String) {
+        let db = Firestore.firestore()
+        
+        db.collection(USER_COLLECTION)
+            .document(userId)
+            .collection(TODO_COLLECTION)
+            .document(itemId)
+            .delete()
+    }
+    
+    
+    func toogleIsDone(item: TodoListItemModel) {
+        
+    }
 }
